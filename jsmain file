@@ -1,0 +1,136 @@
+let score="33";
+//console.log(typeof score);
+//let valueInNumber = Number(score);
+//console.log(typeof valueInNumber);
+let isLoggedIn=1;
+let BooleanisLoggedIn= Boolean(isLoggedIn);
+//console.log(typeof BooleanisLoggedIn);
+//console.log(3>=3);
+
+let myDate = new Date();
+//console.log(myDate);
+//console.log(myDate.toString);
+//console.log(myDate.toDateString());
+//console.log(myDate.toLocaleDateString());
+let myCreatedDate = new Date(2003,10,11);
+//console.log(myCreatedDate.toString());
+//const myArr= [0,1,2,3,4,5];
+//myArr.push(7);
+//myArr.pop();
+//console.log(myArr);
+//const mySmb = Symbol("A");
+//const JSuser = {
+    //name:"aman",
+    //mySmb:"key1",
+    //Rollno:1314809223,
+    //ag:18,
+    //location:"new delhi",
+  //  email:"amansighpatwal2003@gmail.com"
+
+//}
+//JSuser.welcoming = function(){
+ //   console.log("helooo aman");
+//}
+//console.log(JSuser.welcoming());
+
+//function loginUserMessage(username){
+    //if(!username){
+        //console.log("Please enter your username");
+      //  return;
+
+    //}
+  //  return `${username} just Logged in `;
+
+
+//}
+//console.log(loginUserMessage());
+//if(2 ==="4"){
+    //console.log("executed!");
+//}
+
+for (let i = 0; i<=10; i++){
+  //console.log(i);
+
+}
+
+const myObject ={
+    Js:"javascript",
+    cpp:"c++",
+    py:"python"
+
+}
+
+for (const key in myObject) {
+     //console.log( key,myObject[key]);
+  
+}
+
+const myArr=[1,2,3,4,5,6,7,8,9,10];
+
+const newarr = myArr.filter( (item) =>(item===10) )
+//console.log(newarr);
+
+
+//const myNums = [1,2,3]
+
+//const myTotal = myNums.reduce( function(acc,currval){
+  //console.log(acc,currval);
+  //return acc+currval;
+
+//},0  )
+
+//const myNum = [1,2,3]
+//const mytotal = myNum.reduce( (acc,currval)=> console.log(acc,currval), acc+currval ,0)
+//console.log(mytotal)
+
+
+//const promiseFive = new promise(function(resolve, reject){
+  //setTimeout(() => {
+    //let error = true;
+    //if/(!error){
+      //resolve({username : "aman patwal", password: "1234"})
+
+    //}else{
+      //reject ('ERROR: JS WENT WRONG')
+    //}
+    
+  //},1000);
+//})
+
+//promiseFive
+//.then()
+
+//function User(username, loginCount, isLoggedIn){
+  //this.username = username;
+  //this.loginCount = loginCount;
+ // this.isLoggedIn = isLoggedIn;
+  //return this
+//}
+//const userOne = User("aman",12,true)
+//console.log(userOne);
+
+
+
+
+
+function User(username,email,password){
+  this.username = username;
+  this.email = email;
+  this.password = password;
+
+
+}
+User.prototype.getUsername = function(){
+  return this.username.toUpperCase();
+}
+User.prototype.getPassword = function(){
+  return this.password;
+}
+
+const chai = new User("aman patwal", "amansinghpatwal2003@gmail.com", 123);
+
+console.log(chai.getPassword());
+console.log(chai.getUsername());
+
+
+
